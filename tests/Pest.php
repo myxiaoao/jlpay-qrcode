@@ -31,6 +31,7 @@ function makeApi(): Api
     ]);
 }
 
-function generateOrderNumber(): string {
+function generateOrderNumber(): string
+{
     return str_pad(time(), 10, '0', STR_PAD_LEFT);
 }

@@ -89,7 +89,7 @@ class Client
      */
     public function sendOpenApiRequest(string $endpoint, array $data): array
     {
-        $url = $this->baseOpenapiUrl . ltrim($endpoint, '/');
+        $url = $this->baseOpenapiUrl.ltrim($endpoint, '/');
         $data['agentId'] = $this->orgCode;
         $data['signData'] = $this->signData($data, $data['signData']);
 
@@ -104,7 +104,7 @@ class Client
      */
     public function sendRequest(string $endpoint, array $data): array
     {
-        $url = $this->baseUrl . ltrim($endpoint, '/');
+        $url = $this->baseUrl.ltrim($endpoint, '/');
 
         $data['org_code'] = $this->orgCode;
         $data['mch_id'] = $this->mchId;

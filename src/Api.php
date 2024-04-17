@@ -82,7 +82,7 @@ class Api
             'transaction_id' => $transactionId,
             'out_trade_no' => $outTradeNo,
             'charset' => $charset,
-            'sign_type' => $signType
+            'sign_type' => $signType,
         ]);
 
         return $this->client->sendRequest('api/pay/chnquery', $data);
@@ -116,7 +116,7 @@ class Api
             'longitude' => $longitude,
             'latitude' => $latitude,
             'charset' => $charset,
-            'sign_type' => $signType
+            'sign_type' => $signType,
         ]);
 
         return $this->client->sendRequest('api/pay/refund', $data);
@@ -146,7 +146,7 @@ class Api
             'mch_create_ip' => $mchCreateIp,
             'longitude' => $longitude,
             'latitude' => $latitude,
-            'sign_type' => $signType
+            'sign_type' => $signType,
         ]);
 
         return $this->client->sendRequest('api/pay/cancel', $data);
@@ -206,7 +206,7 @@ class Api
             'terminal_info' => $terminalInfo,
             'pay_type' => $payType,
             'charset' => $charset,
-            'sign_type' => $signType
+            'sign_type' => $signType,
         ]);
 
         return $this->client->sendRequest('api/pay/micropay', $data);
@@ -266,7 +266,7 @@ class Api
             'terminal_info' => $terminalInfo,
             'pay_type' => $payType,
             'charset' => $charset,
-            'sign_type' => $signType
+            'sign_type' => $signType,
         ]);
 
         return $this->client->sendRequest('api/pay/qrcodepay', $data);
@@ -324,7 +324,7 @@ class Api
             'terminal_info' => $terminalInfo,
             'pay_type' => $payType,
             'charset' => $charset,
-            'sign_type' => $signType
+            'sign_type' => $signType,
         ]);
 
         return $this->client->sendRequest('api/pay/officialpay', $data);
@@ -395,8 +395,8 @@ class Api
             'attach' => $attach,
             'total_fee' => $totalFee,
             'notify_url' => $notifyUrl,
-            'buyer_logon_id'=> $buyerLogonId,
-            'buyer_id'=> $buyerId,
+            'buyer_logon_id' => $buyerLogonId,
+            'buyer_id' => $buyerId,
             'payment_valid_time' => $paymentValidTime,
             'limit_pay' => $limitPay,
             'is_hire_purchase' => $isHirePurchase,
@@ -414,7 +414,7 @@ class Api
             'terminal_info' => $terminalInfo,
             'pay_type' => $payType,
             'charset' => $charset,
-            'sign_type' => $signType
+            'sign_type' => $signType,
         ]);
 
         return $this->client->sendRequest('api/pay/waph5pay', $data);
