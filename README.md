@@ -1,7 +1,7 @@
 # JiaLian Payment PHP SDK.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/cooper/jlpay-qrcode.svg?style=flat-square)](https://packagist.org/packages/cooper/jlpay-qrcode)
-[![Tests](https://img.shields.io/github/actions/workflow/status/myxiaoao/jlpay-qrcode/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/myxiaoao/jlpay-qrcode/actions/workflows/run-tests.yml)
+[![Tests](https://img.shields.io/github/actions/workflow/status/myxiaoao/jlpay-qrcode/run-tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/myxiaoao/jlpay-qrcode/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/cooper/jlpay-qrcode.svg?style=flat-square)](https://packagist.org/packages/cooper/jlpay-qrcode)
 
 ## Installation
