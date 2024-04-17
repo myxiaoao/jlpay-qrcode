@@ -38,7 +38,7 @@ it('test verify', function () {
 });
 
 it('test chnquery', function () {
-    $sendChnQueryRequest = makeApi()->sendChnQueryRequest('451113671593190188646497');
+    $sendChnQueryRequest = makeApi()->sendChnQueryRequest(transactionId: '451113671593190188646497');
     expect($sendChnQueryRequest['transaction_id'])->toBe('451113671593190188646497')
         ->and($sendChnQueryRequest['out_trade_no'])->toBe('1713315096');
 });

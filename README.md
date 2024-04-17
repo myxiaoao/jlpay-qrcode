@@ -6,7 +6,6 @@
 
 This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
 
-
 ## Installation
 
 You can install the package via composer:
@@ -18,9 +17,12 @@ composer require cooper/jlpay-qrcode
 ## Usage
 
 ```php
-$skeleton = new Cooper\JlPayQrcode();
-echo $skeleton->echoPhrase('Hello, Cooper!');
+$api = new Cooper\JlPayQrcode\Api((JL_PUB_KEY, MER_PRI_KEY, ORG_CODE, MER_ID));
+$res = $api->sendChnQueryRequest(transactionId: '451113671593190188646497'); // 查询订单
+var_dump($res);
 ```
+
+> Check the API methods corresponding to the API class.
 
 ## Testing
 
