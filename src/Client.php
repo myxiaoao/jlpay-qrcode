@@ -135,6 +135,14 @@ class Client
     /**
      * @throws JsonException
      */
+    public function notifySign(array $data,string $sign): bool
+    {
+        return $this->signature->verify($this->toSortedQueryString($data), $sign);
+    }
+
+    /**
+     * @throws JsonException
+     */
     private function sign(array $data): string
     {
         return $this->signature->sign($this->toSortedQueryString($data));

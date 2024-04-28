@@ -419,4 +419,12 @@ class Api
 
         return $this->client->sendRequest('api/pay/waph5pay', $data);
     }
+
+    /**
+     * @throws JsonException
+     */
+    public function notifySign(array $data, string $sign): bool
+    {
+        return $this->client->notifySign($data, $sign);
+    }
 }
