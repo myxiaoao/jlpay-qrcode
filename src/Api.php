@@ -164,6 +164,7 @@ class Api
         string $attach,
         int $totalFee,
         string $authCode,
+        ?string $termNo = null,
         ?string $paymentValidTime = '20',
         ?string $limitPay = null,
         ?string $isHirePurchase = null,
@@ -184,6 +185,7 @@ class Api
         ?string $signType = 'RSA',
     ): array {
         $data = $this->client->filterNullValues([
+            'term_no' => $termNo,
             'out_trade_no' => $outTradeNo,
             'body' => $body,
             'attach' => $attach,
@@ -223,6 +225,7 @@ class Api
         string $body,
         string $attach,
         int $totalFee,
+        ?string $termNo = null,
         ?string $notifyUrl = null,
         ?string $paymentValidTime = '20',
         ?string $limitPay = null,
@@ -244,6 +247,7 @@ class Api
         ?string $signType = 'RSA',
     ): array {
         $data = $this->client->filterNullValues([
+            'term_no' => $termNo,
             'out_trade_no' => $outTradeNo,
             'body' => $body,
             'attach' => $attach,
@@ -284,6 +288,7 @@ class Api
         string $attach,
         int $totalFee,
         string $openId,
+        ?string $termNo = null,
         ?string $subAppid = null,
         ?string $notifyUrl = null,
         ?string $paymentValidTime = '20',
@@ -303,6 +308,7 @@ class Api
         ?string $signType = 'RSA',
     ): array {
         $data = $this->client->filterNullValues([
+            'term_no' => $termNo,
             'out_trade_no' => $outTradeNo,
             'body' => $body,
             'attach' => $attach,
@@ -367,6 +373,7 @@ class Api
         string $body,
         string $attach,
         int $totalFee,
+        ?string $termNo = null,
         ?string $buyerLogonId = null,
         ?string $buyerId = null,
         ?string $notifyUrl = null,
@@ -390,6 +397,7 @@ class Api
         ?string $signType = 'RSA',
     ): array {
         $data = $this->client->filterNullValues([
+            'term_no' => $termNo,
             'out_trade_no' => $outTradeNo,
             'body' => $body,
             'attach' => $attach,
