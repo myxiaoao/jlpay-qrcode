@@ -66,7 +66,7 @@ class Client
             $stack->push(
                 Middleware::log(
                     $logger,
-                    new MessageFormatter('{method} - {target} - HTTP/{version} - {code} - {req_headers} - {req_body} - {res_headers} - {res_body} ')
+                    new MessageFormatter('{code} - {req_headers} - {req_body} - {res_headers} - {res_body} ')
                 )
             );
 
