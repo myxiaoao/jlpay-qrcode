@@ -21,7 +21,7 @@
         "ext-openssl": "*"
     },
     "require-dev": {
-        "pestphp/pest": "^2.20",
+        "pestphp/pest": "^3.0",
         "laravel/pint": "^1.0"
     },
     "autoload": {
